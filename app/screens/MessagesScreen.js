@@ -12,7 +12,6 @@ import ListItem from "../components/ListItem";
 import ListItemSeparator from "../components/ListItemSeparator";
 import Screen from "../components/Screen";
 import ListItemDelete from "../components/ListItemDelete";
-import { getBackgroundColor } from "../../node_modules/react-native/Libraries/LogBox/UI/LogBoxStyle";
 
 const messages = [
   {
@@ -40,11 +39,7 @@ function MessagesScreen(props) {
             subTitle={item.description}
             image={item.image}
             onPress={() => console.log("item selected", item)}
-            renderRightActions={() => (
-              <View style={{ getBackgroundColor: "red", width: 70 }}>
-                {/* <MaterialCommunityIcons name="trash-can" /> */}
-              </View>
-            )}
+            renderRightActions={ListItemDelete}
           />
         )}
         ItemSeparatorComponent={ListItemSeparator}
