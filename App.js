@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Switch } from "react-native";
-import RegisterScreen from "./app/screens/RegisterScreen";
+import ListEditScreen from "./app/screens/ListEditScreen";
 
 export default function App() {
-  return <RegisterScreen />;
+  return <ListEditScreen />;
 }
