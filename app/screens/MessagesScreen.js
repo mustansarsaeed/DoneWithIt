@@ -16,15 +16,15 @@ import ListItemDelete from "../components/ListItemDelete";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
-    image: require("../assets/mosh.jpg"),
+    title: "Mustansar Saeed",
+    description: "Hi! Is this item still available?",
+    image: require("../assets/mustansar.jpeg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
-    image: require("../assets/mosh.jpg"),
+    title: "Mustansar Saeed",
+    description: "When are you available to talk about this item?",
+    image: require("../assets/mustansar.jpeg"),
   },
 ];
 function MessagesScreen(props) {

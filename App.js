@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Switch } from "react-native";
-import MessagesScreen from "./app/screens/MessagesScreen";
+
+import ListEditScreen from "./app/screens/ListEditScreen";
 
 export default function App() {
-  return <MessagesScreen />;
+  return <ListEditScreen />;
 }

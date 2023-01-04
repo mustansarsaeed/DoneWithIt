@@ -43,6 +43,7 @@ function ListEditScreen(props) {
         <AppFormField
           placeholder="Price"
           maxLength={8}
+          width={150}
           autoCapitalize="none"
           keyboardType="numeric"
           name="price"
@@ -51,6 +52,7 @@ function ListEditScreen(props) {
         <AppFormPicker
           name="category"
           placeholder="Category"
+          width={150}
           categories={categories}
         />
 
