@@ -6,15 +6,26 @@ import * as Yup from "yup";
 import { AppForm, AppFormField, SubmitButton } from "../components/forms";
 import AppFormPicker from "../components/forms/AppFormPicker";
 import Screen from "../components/Screen";
+import CategoryPickerItem from "../components/CategoryPickerItem";
 
 const categories = [
   {
     id: 1,
+    backgroundColor: "red",
+    icon: "apps",
     label: "Furniture",
   },
   {
     id: 2,
+    backgroundColor: "green",
+    icon: "email",
     label: "Clothing",
+  },
+  {
+    id: 3,
+    backgroundColor: "blue",
+    icon: "lock",
+    label: "Camera",
   },
 ];
 
@@ -52,6 +63,8 @@ function ListEditScreen(props) {
         <AppFormPicker
           name="category"
           placeholder="Category"
+          // numberOfColumns={3}
+          // PickerItemComponent={CategoryPickerItem}
           width={150}
           categories={categories}
         />
